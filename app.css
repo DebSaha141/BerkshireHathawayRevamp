@@ -1,0 +1,82 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+*{
+    background-color: #d5d5d8;
+    margin:1px 0px
+}
+
+#header{
+    display: flex;
+    border-bottom: medium solid;
+    padding: 12px 5px;
+    overflow: hidden;
+}
+
+#logo{
+    height: auto;
+    width: 40%;
+    margin: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+#logo a{
+    font-family: "Rubik";
+    font-size: 5.5vh;
+    font-weight: 600;
+}
+
+#navigation nav{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation nav ul{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation li{
+    list-style-type: none;
+    margin: 10px;
+    margin-right: 50px;
+    font-size: 2.8vh;
+    border-radius: 20px;
+}
+
+#nav-item:hover { 
+    transform: scale(1.1);
+    transition: transform .2s ease-in-out; 
+}
+
+#navigation button{
+    font-size: 3vh;
+    font-family: "Rubik";
+    font-weight: 500;
+    padding: 0px 20px;
+    border-radius: 50px;
+}
+
+#navigation button:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    transition: 0.5s;
+}
+
+#navigation{
+    width: 60%;
+    font-family: "Rubik";
+    font-weight: 500;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
