@@ -3,10 +3,17 @@ a{
     color: black;
 }
 
+body{
+    background-color: #d5d5d8;
+}
+
 *{
-background-color: #d5d5d8;
-margin:0;
-font-family: "Rubik";
+    margin:0;
+    font-family: "Rubik";
+}
+
+.body{
+    z-index: -2;
 }
 
 #logo{
@@ -98,6 +105,129 @@ transform: scale(1.0);
 transition: 0.5s;
 }
 
+#intro{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: medium solid;
+    padding-bottom: 20px;
+    /* margin: 0 40px; */
+}
+
+.body{
+    margin-top: 30px;
+}
+
+#warren{
+    height: 600px;
+    width: 600px;
+    border: 2px solid;
+}
+
+#warrenImg{
+    width: 50%;
+}
+
+#message{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+}
+
+#message span{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#message p{
+    color: grey;
+    font-size: 2rem;
+}
+
+#messageBox{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    margin: 0 0 0 150px;
+    padding: 20px;
+    /* height: 100px;
+    width: 200px; */
+}
+
+#messageBox img{
+    height: 50px;
+    width: 50px;
+}
+
+#messageBox p{
+    color: black;
+    font-size:20px;
+}
+
+#messageBox a{
+    color: black;
+    font-size:20px;
+    border: thin solid;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    #intro{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #message{
+        width: 100%;
+
+        /* background-color: aqua; */
+        justify-content: center;
+        align-items: center;
+        margin-right:0;
+    }
+
+    #messageBox{
+        margin-top: 30px;
+        width: 80%;
+        margin-left:0;
+    }
+
+    #messageBox{
+        font-size: 10px;
+    }
+
+    #warrenImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #warren{
+        width: 400px;
+        height: 400px;
+    }
+
+    #message h1{
+        font-size: 30px;
+    }
+    #message p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #warren{
+        width: 320px;
+        height: 320px;
+    }
+}
 @media screen and (max-width: 1420px) {
 .nav__hamburger {
     display: flex;
@@ -113,8 +243,9 @@ transition: 0.5s;
     position: absolute;
     display: flex;
     align-items: center;
-    background-color: black;
-    top: -15rem;
+    background-color: #000000c4;
+    opacity: 1;
+    top: -30rem;
     width: 100%;
     transition: all ease-in-out 0.4s;
 }
@@ -125,19 +256,21 @@ transition: 0.5s;
 .nav__menu ul {
     flex-direction: column;
     width: 100%;
-    padding: 5rem 0 0.6rem;
+    padding: 2rem 0 1rem;
 }
 .nav__menu ul li {
     text-align: center;
 }
 .nav__menu ul li a {
     padding: 0.5rem;
+    color: white;
+    border-color: white;
 }
 .nav__menu {
-    z-index: -1;
+    z-index: 1;
 }
 .nav__menu.active {
-    top: 0;
+    top: 2rem;
 }
 .nav__hamburger.active :nth-child(1) {
     transform: rotate(45deg) translate(0.45rem, 0.1875rem);
@@ -169,7 +302,7 @@ transition: 0.5s;
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
 #logo a{
     font-size: 2rem;
 }
